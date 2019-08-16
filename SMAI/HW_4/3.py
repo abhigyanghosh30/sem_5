@@ -4,22 +4,22 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-if os.path.isfile('data_3A.npy'):
-    A = np.load('data_3A.npy')
+if os.path.isfile('data_A.npy'):
+    A = np.load('data_A.npy')
 
-if os.path.isfile('data_3B.npy'):
-    B = np.load('data_3B.npy')
+if os.path.isfile('data_B.npy'):
+    B = np.load('data_B.npy')
 
 
 def generate():
-    mean = [0, 0, 0]
-    # mean_b = [1, 1, 1]
-    cov_a = [[1,2,3],[4,5,6],[7,8,9]]
-    cov_b = [[4,0,0],[0,8,0],[0,0,6]]
-    A = np.random.multivariate_normal(mean, cov_a, 1000)
-    B = np.random.multivariate_normal(mean, cov_b, 1000)
-    np.save('data_3A.npy',A)
-    np.save('data_3B.npy',B)
+    mean_a = [0, 0, 0]
+    mean_b = [2, 2, 2]
+    cov_a = cov_b = np.dot([[1,2,3],[2,3,4],[3,2,1]],np.transpose([[1,2,3],[2,3,4],[3,2,1]]))
+    print(cov_a)
+    A = np.random.multivariate_normal(mean_a, cov_a, 1000)
+    B = np.random.multivariate_normal(mean_b, cov_b, 1000)
+    np.save('data_A.npy',A)
+    np.save('data_B.npy',B)
 
 
 def plot():
@@ -29,7 +29,7 @@ def plot():
     plt.scatter(np.array(B[:,1]),np.array(B[:,2]),color='b',marker='x')
     plt.xlabel('Y Axis')
     plt.ylabel('Z Axis')
-    # ax.set_zlabel('Z Axis')
+    # plt.set_zlabel('Z Axis')
     plt.show()
 
 if __name__ == "__main__":
