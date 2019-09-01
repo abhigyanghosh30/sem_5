@@ -27,8 +27,8 @@ print(np.log(np.linalg.det(cov1)))
 print(np.log(np.linalg.det(cov2)))
 
 
-x = np.linspace(-60, 60, 400)
-y = np.linspace(-25, 25, 400)
+x = np.linspace(-5, 15, 400)
+y = np.linspace(-5, 15, 400)
 x, y = np.meshgrid(x, y)
 
 # plt.contour(x,y,(x*x+y*y+x*y),[0],colors='k')
@@ -45,4 +45,5 @@ for i in range(7):
 plt.scatter(x_1,y_1,c='g')
 plt.scatter(x_2,y_2,c='b')
 plt.contour(x,y,(1.23075216*x*x-38.42858464*x+1.91836659*x*y-11.54348912*y-0.67267112*y*y+204.9249634),[0],colors='k')
+plt.contour(x,y,(1.23075216*x*x-38.42858464*x+1.91836659*x*y-11.54348912*y-0.67267112*y*y+204.9249634+np.log(4)),[0],colors='y')
 plt.show()
