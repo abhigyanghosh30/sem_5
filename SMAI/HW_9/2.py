@@ -26,15 +26,21 @@ if __name__ == "__main__":
     
     fig2 = plt.figure()
     x3s,y3s = gradient_descent(x=-2,n=0.4,iterations=1000)
-    p3 = fig2.add_subplot(121,title='n=0.4',xlabel='iterations',ylabel='errors')
+    p3 = fig2.add_subplot(131,title='n=0.4',xlabel='iterations',ylabel='errors')
     p3.plot(x3s)
 
     x4s,y4s = gradient_descent(x=-2,n=1,iterations=1000)
-    p4 = fig2.add_subplot(122,title='n=1',xlabel='iterations',ylabel='errors')
+    p4 = fig2.add_subplot(132,title='n=1',xlabel='iterations',ylabel='errors')
     p4.scatter([i for i in range(len(x4s))],x4s,s=0.2)
 
-    fig3 = plt.figure()
     x5s,y5s = gradient_descent(x=-2,n=1.2,iterations=1000)
-    p5 = fig3.add_subplot(122,title='n=2',xlabel='iterations',ylabel='errors')
+    p5 = fig2.add_subplot(133,title='n=2',xlabel='iterations',ylabel='errors')
     p5.scatter([i for i in range(len(x5s))],x5s,s=0.3)
+    
+    fig3 = plt.figure()
+    iterations = []
+    for i in range(10,100000,100):
+        iterations.append(gradient_descent(x=-2,n=0.4,iterations=100000,limit=1/i))
+    p6 = fig3.add_subplot(111,title='',xlabel='1/convergance criteria',ylabel='iterations')
+    p6.plot(iterations)
     plt.show()
