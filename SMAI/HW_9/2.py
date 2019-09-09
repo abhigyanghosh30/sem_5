@@ -3,16 +3,23 @@ from matplotlib import pyplot as plt
 
 fig1 = plt.figure()
 
-def gradient_descent(x,n=0.1,iterations=5,limit=0):
+def gradient_descent(x,n=0.1,iterations=5):
     xs = [-2]
     ys = [4]
     for i in range(iterations):
         x -= n * 2 * x  # dy/dx of x^2 is 2x
         xs.append(x)
         ys.append(x*x)
-        if x*x < limit:
-            return i    
     return xs,ys
+
+def gradient_descent_iter(x,n=0.1,limit=0.1):
+    i=0
+    while True:
+        x -= n * 2 * x 
+        i+=1 
+        if x*x<limit:
+            return i
+    
 
 
 if __name__ == "__main__":
@@ -39,8 +46,8 @@ if __name__ == "__main__":
     
     fig3 = plt.figure()
     iterations = []
-    for i in range(10,100000,100):
-        iterations.append(gradient_descent(x=-2,n=0.4,iterations=100000,limit=1/i))
+    for i in range(1000,1,-1):
+        iterations.append(gradient_descent_iter(x=-2,n=0.1,limit=i/1000))
     p6 = fig3.add_subplot(111,title='',xlabel='1/convergance criteria',ylabel='iterations')
     p6.plot(iterations)
     plt.show()
