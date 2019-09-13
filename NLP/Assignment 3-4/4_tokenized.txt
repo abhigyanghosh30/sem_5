@@ -1,0 +1,22 @@
+#TrumpIsATraitor in addition to being mentally ill. https://t.co/zgqwdAU32z
+
+[('HASHTAG', '#TrumpIsATraitor'), ('SPACE', ' '), ('WORD', 'in'), ('SPACE', ' '), ('WORD', 'addition'), ('SPACE', ' '), ('WORD', 'to'), ('SPACE', ' '), ('WORD', 'being'), ('SPACE', ' '), ('WORD', 'mentally'), ('SPACE', ' '), ('WORD', 'ill'), ('PUNC', '.'), ('SPACE', ' '), ('LINK', 'https://t.co/zgqwdAU32z'), ('SPACE', '\n')] b''
+
+@TheRealOJ32 Go away #murderer
+
+[('MENTION', '@TheRealOJ32'), ('SPACE', ' '), ('WORD', 'Go'), ('SPACE', ' '), ('WORD', 'away'), ('SPACE', ' '), ('HASHTAG', '#murderer'), ('SPACE', '\n')] b''
+
+Far-Right Cell Planned Attack On Jewish Event In Paris #Resist #ResistTrump #FuckTrump https://t.co/JJ3CDrHBCH
+
+[('WORD', 'Far'), ('PUNC', '-'), ('WORD', 'Right'), ('SPACE', ' '), ('WORD', 'Cell'), ('SPACE', ' '), ('WORD', 'Planned'), ('SPACE', ' '), ('WORD', 'Attack'), ('SPACE', ' '), ('WORD', 'On'), ('SPACE', ' '), ('WORD', 'Jewish'), ('SPACE', ' '), ('WORD', 'Event'), ('SPACE', ' '), ('WORD', 'In'), ('SPACE', ' '), ('WORD', 'Paris'), ('SPACE', ' '), ('HASHTAG', '#Resist'), ('SPACE', ' '), ('HASHTAG', '#ResistTrump'), ('SPACE', ' '), ('HASHTAG', '#FuckTrump'), ('SPACE', ' '), ('LINK', 'https://t.co/JJ3CDrHBCH'), ('SPACE', '\n')] b''
+
+The Worst World Cup Ever? My article https://t.co/F6WIe0pSOC #ICCWorldCup2019 #WorldCup2019 @cricketworldcup @ICC #ShameOnICC
+
+[('WORD', 'The'), ('SPACE', ' '), ('WORD', 'Worst'), ('SPACE', ' '), ('WORD', 'World'), ('SPACE', ' '), ('WORD', 'Cup'), ('SPACE', ' '), ('WORD', 'Ever'), ('PUNC', '?'), ('SPACE', ' '), ('WORD', 'My'), ('SPACE', ' '), ('WORD', 'article'), ('SPACE', ' '), ('LINK', 'https://t.co/F6WIe0pSOC'), ('SPACE', ' '), ('HASHTAG', '#ICCWorldCup2019'), ('SPACE', ' '), ('HASHTAG', '#WorldCup2019'), ('SPACE', ' '), ('MENTION', '@cricketworldcup'), ('SPACE', ' '), ('MENTION', '@ICC'), ('SPACE', ' '), ('HASHTAG', '#ShameOnICC'), ('SPACE', '\n')] b''
+
+Because....#douchebag https://t.co/1bgGriq5BH
+
+[('WORD', 'Because'), ('PUNC', '....#'), ('WORD', 'douchebag'), ('SPACE', ' '), ('LINK', 'https://t.co/1bgGriq5BH'), ('SPACE', '\n')] b''
+
+Well Flint still doesn’t have drinkable water &amp; 9/11 first responders are going with out proper medical care....BUY HEY at least Air Force One is getting a pointless paint job!! 🖕🏻🤨🖕🏻 #FuckTrump #IMPEACHTRUMP
+
