@@ -32,7 +32,7 @@ f.close()
 
 def word_tokenizer(sentence):
     scanner = re.Scanner([
-        (b"[\x80-\xff]+", lambda scanner,token: ("EMOJI",token)),
+        (b"[\x80-\xff]{2,4}", lambda scanner,token: ("EMOJI",token)),
         (r"[a-zA-Z0-9]+@([a-zA-Z0-9]+\.*){2,3}",lambda scanner,token: ("EMAIL",token)),
         (r"http[s]*://[A-Z0-9a-z./]*",lambda scanner,token: ("LINK",token)),
         (r"#[A-Za-z0-9]+",lambda scanner,token: ("HASHTAG",token)),
