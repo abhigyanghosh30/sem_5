@@ -2,20 +2,21 @@
 pragma solidity >=0.4.24;
 
 contract tic {
-    uint8 games=0;
-    uint8 cm=0;
+    
+    uint8 games;
+    uint8 cm;
     address p1;
     address p2;
-    
-    uint _p1=0;
-    uint _p2=0;
+
+
     enum Board { Empty, X, O}
     Board[3][3] board;
     
     constructor() public payable {
         require(msg.value==1 ether);
         p1 = msg.sender;
-        
+        games=0;
+        cm=0;
     }
     
     function getBalance() public view returns (uint256) {
@@ -50,7 +51,10 @@ contract tic {
         
     }
     
-    
+    function startNewGame() public {
+        cm=0;
+        games+=1;
+    }
     
     //Printing the board
     
@@ -128,13 +132,26 @@ contract tic {
     function over() public returns(bool) {
         if(cm > 9 || Winner() != Board.Empty )
         {
-            games +=1;
-            cm = 0;
+            if(Winner() != Board.Empty)
+            {
+                startNewGame();
+            }
             return true;
         }
             
         return false;
         
+    }
+    
+    function declareWinner() public {
+        if(Winner()==Board.X)
+            p1.transfer(2 ether);
+        if(Winner()==Board.O)
+            p2.transfer(2 ether);
+        if(Winner()==Board.Empty){
+            p1.transfer(1 ether);
+            p2.transfer(1 ether);
+        }
     }
     
     function Winner() public view returns(Board) {
