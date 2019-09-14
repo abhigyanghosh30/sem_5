@@ -132,10 +132,8 @@ contract tic {
     function over() public returns(bool) {
         if(cm > 9 || Winner() != Board.Empty )
         {
-            if(Winner() != Board.Empty)
-            {
-                startNewGame();
-            }
+            declareWinner();
+            startNewGame();
             return true;
         }
             
