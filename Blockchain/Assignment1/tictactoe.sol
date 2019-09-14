@@ -12,9 +12,14 @@ contract tic {
     enum Board { Empty, X, O}
     Board[3][3] board;
     
-    constructor() public {
+    constructor() public payable {
+        require(msg.value==1 ether);
         p1 = msg.sender;
         
+    }
+    
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
     }
     
     function printPlayers() public view returns(address,address){
@@ -37,9 +42,12 @@ contract tic {
             return p1;
         }
     }
+    
     function joinGame() public payable{
         require(p1!=0x0 && p1!= msg.sender);
+        require( msg.value == 1 ether);
         p2 = msg.sender;
+        
     }
     
     
@@ -93,9 +101,10 @@ contract tic {
         
         
     }
-    function InBounds(uint8 x, uint8 y) public view returns(bool){
+    
+    function InBounds(uint8 x, uint8 y) public pure returns(bool){
      
-        return(x>=0 && x<3 && y>=0 && y<3);
+        return (x>=0 && x<3 && y>=0 && y<3);
         
         
     }
@@ -111,6 +120,7 @@ contract tic {
             return Board.O;
         }
     }
+    
     function getCurrAdd() public view returns(address) {
         return msg.sender;
     }
@@ -126,6 +136,7 @@ contract tic {
         return false;
         
     }
+    
     function Winner() public view returns(Board) {
         
         for (uint8 i = 0; i < 3; i++) {
