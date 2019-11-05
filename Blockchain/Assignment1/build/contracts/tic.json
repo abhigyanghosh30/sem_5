@@ -24960,8 +24960,8 @@
       "transactionHash": "0x73ea109523f45ca424af255ce1776f378435a669f630f1fc10542dda0d0702eb"
     }
   },
-  "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-17T22:39:31.486Z",
+  "schemaVersion": "3.0.15",
+  "updatedAt": "2019-10-19T12:01:27.440Z",
   "devdoc": {
     "methods": {}
   },

@@ -193,7 +193,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 915,
+                          "referencedDeclaration": 1007,
                           "src": "210:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -494,7 +494,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 915,
+                          "referencedDeclaration": 1007,
                           "src": "210:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -643,8 +643,8 @@
       "transactionHash": "0xfb68f71e9cc9da278fac6780701153d258bac1be25b1cae6baeaad57bc8ac89a"
     }
   },
-  "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-17T22:39:31.497Z",
+  "schemaVersion": "3.0.15",
+  "updatedAt": "2019-10-19T12:01:27.416Z",
   "devdoc": {
     "methods": {}
   },
