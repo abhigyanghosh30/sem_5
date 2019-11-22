@@ -1,0 +1,27 @@
+{
+  "name": "Assignment1",
+  "version": "1.0.0",
+  "description": "## Prerequisites",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "web3": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhigyanghosh30/MyTicTacToe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhigyanghosh30/MyTicTacToe/issues"
+  },
+  "homepage": "https://github.com/abhigyanghosh30/MyTicTacToe#readme"
+}
